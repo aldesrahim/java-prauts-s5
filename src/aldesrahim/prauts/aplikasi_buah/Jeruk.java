@@ -47,11 +47,11 @@ public class Jeruk implements Buah.FruitInterface {
 
         }
 
-        Buah.DTOInterface fruit1 = new BuahDTO("Jeruk Nipis", 5000);
-        Buah.DTOInterface fruit2 = new BuahDTO("Jeruk Manis", 10000.00);
-        Buah.DTOInterface fruit3 = new BuahDTO("Jeruk Bali", 50000.00);
-
-        this.fruits.addAll(Arrays.asList(fruit1, fruit2, fruit3));
+        this.fruits.addAll(Arrays.asList(
+                new BuahDTO("Jeruk Nipis", 5000),
+                new BuahDTO("Jeruk Manis", 10000),
+                new BuahDTO("Jeruk Bali", 50000)
+        ));
     }
 
     public List<Buah.DTOInterface> getCarts() {
