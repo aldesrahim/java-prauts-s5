@@ -37,6 +37,10 @@ public class Jeruk implements Buah.FruitInterface {
                 return this.qty;
             }
 
+            public Double getTotalHarga() {
+                return this.getQty() * this.getHarga();
+            }
+
             public void setQty(Integer qty) {
                 this.qty = qty;
             }
@@ -108,7 +112,7 @@ public class Jeruk implements Buah.FruitInterface {
         double total = 0.0;
 
         for (Buah.DTOInterface cart : this.carts) {
-            total += cart.getHarga() * cart.getQty();
+            total += cart.getTotalHarga();
         }
 
         return total;
