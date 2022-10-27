@@ -47,11 +47,11 @@ public class Mangga implements Buah.FruitInterface {
 
         }
 
-        Buah.DTOInterface fruit1 = new BuahDTO("Mangga Harum Manis", 15000);
-        Buah.DTOInterface fruit2 = new BuahDTO("Mangga Indramayu", 20000.00);
-        Buah.DTOInterface fruit3 = new BuahDTO("Mangga Simanalagi", 30000.00);
-
-        this.fruits.addAll(Arrays.asList(fruit1, fruit2, fruit3));
+        this.fruits.addAll(Arrays.asList(
+                new BuahDTO("Mangga Harum Manis", 15000),
+                new BuahDTO("Mangga Indramayu", 20000),
+                new BuahDTO("Mangga Simanalagi", 30000)
+        ));
     }
 
     public List<Buah.DTOInterface> getCarts() {
