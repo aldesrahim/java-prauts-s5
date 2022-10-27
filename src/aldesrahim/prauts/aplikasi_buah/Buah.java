@@ -75,6 +75,8 @@ public class Buah {
 
         Integer getQty();
 
+        Double getTotalHarga();
+
         void setQty(Integer qty);
     }
 
